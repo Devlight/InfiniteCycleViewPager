@@ -14,8 +14,6 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 
-import com.gigamole.infinitycycleviewpager.R;
-
 import java.lang.reflect.Field;
 
 import static android.support.v4.view.ViewPager.GONE;

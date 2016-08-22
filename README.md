@@ -7,7 +7,7 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 
 <!--[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-NavigationTabBar-yellow.svg?style=flat)](http://android-arsenal.com/details/1/3382)-->
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
-[![Download](https://api.bintray.com/packages/gigamole/maven/navigationtabbar/images/download.svg) ](https://bintray.com/gigamole/maven/navigationtabbar/_latestVersion)
+[![Download](https://api.bintray.com/packages/gigamole/maven/infinitecycleviewpager/images/download.svg)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg?maxAge=2592000&label=License)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fa85dd3c9aa84d879b3e76be8462145e)](https://www.codacy.com/app/gigamole53/InfiniteCycleViewPager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DevLight-Mobile-Agency/InfiniteCycleViewPager&amp;utm_campaign=Badge_Grade)
 
@@ -20,21 +20,7 @@ Download
 
 You can download a `.aar` from GitHub's [releases page](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/releases).
 
-Or use Gradle jCenter:
-
-```groovy
-dependencies {
-    repositories {
-        mavenCentral()
-        maven {
-            url  'http://dl.bintray.com/gigamole/maven/'
-        }
-    }
-    compile 'com.github.devlight:infinitecycleviewpager:+'
-}
-```
-
-Or Gradle Maven Central:
+Or use Gradle:
 
 ```groovy
 compile 'com.github.devlight:infinitecycleviewpager:1.0.0'
@@ -44,10 +30,18 @@ Or Maven:
 
 ```groovy
 <dependency>
-    <groupId>com.github.devlight</groupId>
-    <artifactId>infinitecycleviewpager</artifactId>
-    <version>1.0.0</version>
-    <type>aar</type>
+  <groupId>com.github.devlight</groupId>
+  <artifactId>infinitecycleviewpager</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+Or Ivy:
+
+```groovy
+<dependency org='com.github.devlight' name='infinitecycleviewpager' rev='1.0.0'>
+  <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```
 
