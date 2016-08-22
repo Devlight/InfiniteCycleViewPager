@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gigamole.sample.utils.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clipChildren="false">
+
+    <com.gigamole.infinitecycleviewpager.VerticalInfiniteCycleViewPager
+        android:id="@+id/vicvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icvp_center_page_scale_offset="0dp"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_medium_scaled="true"
+        app:icvp_min_page_scale="0.6"
+        app:icvp_min_page_scale_offset="0dp"
+        app:icvp_scroll_duration="600"/>
+
+</com.gigamole.sample.utils.SquareFrameLayout>

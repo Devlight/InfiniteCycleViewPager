@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/hicvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_scroll_duration="1000"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_medium_scaled="false"/>
+
+</FrameLayout>
