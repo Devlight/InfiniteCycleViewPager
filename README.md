@@ -11,7 +11,7 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg?maxAge=2592000&label=License)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fa85dd3c9aa84d879b3e76be8462145e)](https://www.codacy.com/app/gigamole53/InfiniteCycleViewPager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DevLight-Mobile-Agency/InfiniteCycleViewPager&amp;utm_campaign=Badge_Grade)
 
-![](https://lh6.googleusercontent.com/-NioNsWLKTIQ/V7rgiyNXldI/AAAAAAAADAU/hfHakBl9ebg98tAE9Fsp7LwO04tSV1sTACL0B/w402-h637-no/icvp.gif)
+![](https://lh6.googleusercontent.com/-NioNsWLKTIQ/V7rgiyNXldI/AAAAAAAADA4/4DX08SWta6kJ6-pMr3hM_ClQvj0KByGVQCL0B/w402-h637-no/icvp.gif)
 
 U can check the sample app [here](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/tree/master/app).
 
