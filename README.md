@@ -13,7 +13,7 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 
 |   	|   	|   	|
 |:-:	|:-:	|:-:	|
-![](https://lh5.googleusercontent.com/-kDN45A3zU-8/V7r96KSxvgI/AAAAAAAADBk/Z17R7mv5CAQb0zbIcWNcR0dqQn-YQ4JoQCL0B/w402-h636-no/hicvp.gif)|![](https://lh4.googleusercontent.com/-R3EGqhPbm_g/V7sB7fBxQAI/AAAAAAAADDA/u4vWukCjeIEk1XpRMqyUnCUfIuYjKiongCL0B/w241-h382-no/vicvp.gif)|![](https://lh5.googleusercontent.com/-2cSHCwCAll4/V7r96HkRF2I/AAAAAAAADBk/MKs8AqBarSEaqWy9dnlOLZwNeRoDxZHlQCL0B/w402-h636-no/twicvp.gif)
+![](https://lh5.googleusercontent.com/-DpQ9a_kxOhg/V7sDRu6BFlI/AAAAAAAADEM/NLIYoehpbq41sx6qTd5JZ3rrkE6xHQ4RQCL0B/w241-h381-no/hicvp.gif)|![](https://lh6.googleusercontent.com/-eojSc_l1OLs/V7sDRvJYKWI/AAAAAAAADEM/ZrWnluueFjsKw9vLrrcLaYS1P-DMgcoEQCL0B/w241-h382-no/vicvp.gif)|![](https://lh3.googleusercontent.com/-qRRmP-bR-fg/V7sDRjviAYI/AAAAAAAADEM/jMhU4PR4ZqAsScoMz-k8ECCAlGgrY2phQCL0B/w241-h381-no/twicvp.gif)
 
 U can check the sample app [here](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/tree/master/app).
 
@@ -167,7 +167,7 @@ Inspiration
 
 |   	|   	|
 |:-:	|:-:	|
-![](https://d13yacurqjgara.cloudfront.net/users/1169587/screenshots/2832006/cinema_app_gif.gif)|![](http://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2016/05/personal-festival-app-beautiful-mobile-ui.jpg?097e9c)
+![](https://lh5.googleusercontent.com/-pUxe24V4ePI/V7sDRnBIN9I/AAAAAAAADEM/0U3G2lB_HmAbNFO6qOLO6yQ02f1jTjAFgCL0B/w520-h390-no/icvp.gif)|![](http://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2016/05/personal-festival-app-beautiful-mobile-ui.jpg?097e9c)
 
 Author
 =======
