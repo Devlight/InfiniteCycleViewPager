@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
 import com.gigamole.sample.R;
 import com.gigamole.sample.adapters.MainPagerAdapter;
-import com.stanko.tools.DeviceInfo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        DeviceInfo.init(this);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.vp_main);
         viewPager.setAdapter(new MainPagerAdapter(getSupportFragmentManager()));

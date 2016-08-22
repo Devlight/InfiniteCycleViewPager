@@ -90,6 +90,18 @@ public class HorizontalInfiniteCycleViewPager extends ViewPager implements ViewP
         return mInfiniteCycleManager != null && mInfiniteCycleManager.isVertical();
     }
 
+    public OnInfiniteCyclePageTransformListener getOnInfiniteCyclePageTransformListener() {
+        return mInfiniteCycleManager == null ?
+                null : mInfiniteCycleManager.getOnInfiniteCyclePageTransformListener();
+    }
+
+    public void setOnInfiniteCyclePageTransformListener(
+            final OnInfiniteCyclePageTransformListener onInfiniteCyclePageTransformListener
+    ) {
+        if (mInfiniteCycleManager != null)
+            mInfiniteCycleManager.setOnInfiniteCyclePageTransformListener(onInfiniteCyclePageTransformListener);
+    }
+
     @Override
     public void setPageTransformer(final boolean reverseDrawingOrder, final PageTransformer transformer) {
         super.setPageTransformer(

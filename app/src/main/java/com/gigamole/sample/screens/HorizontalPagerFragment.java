@@ -39,6 +39,7 @@ public class HorizontalPagerFragment extends Fragment {
 //        horizontalInfiniteCycleViewPager.setMinPageScale(0.5F);
 //        horizontalInfiniteCycleViewPager.setCenterPageScaleOffset(30.0F);
 //        horizontalInfiniteCycleViewPager.setMinPageScaleOffset(5.0F);
+//        horizontalInfiniteCycleViewPager.setOnInfiniteCyclePageTransformListener();
 
 //        horizontalInfiniteCycleViewPager.setCurrentItem(
 //                horizontalInfiniteCycleViewPager.getRealItem() + 1

@@ -2,6 +2,7 @@ package com.gigamole.sample.utils;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.ImageView;
@@ -33,8 +34,8 @@ public class TintSelectorImageView extends ImageView {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_MOVE:
-//                setColorFilter(TINT_SELECTOR_COLOR, PorterDuff.Mode.SRC_OVER);
-//                postInvalidate();
+                setColorFilter(TINT_SELECTOR_COLOR, PorterDuff.Mode.SRC_OVER);
+                postInvalidate();
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:

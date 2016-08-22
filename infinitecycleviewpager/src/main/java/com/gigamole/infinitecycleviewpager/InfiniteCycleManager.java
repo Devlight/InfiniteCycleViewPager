@@ -768,10 +768,4 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                     Math.sin((input - FACTOR / 4.0F) * (2.0F * Math.PI) / FACTOR) + 1.0F);
         }
     }
-
-    public interface OnInfiniteCyclePageTransformListener {
-        void onPreTransform(final View page, final float position);
-
-        void onPostTransform(final View page, final float position);
-    }
 }
