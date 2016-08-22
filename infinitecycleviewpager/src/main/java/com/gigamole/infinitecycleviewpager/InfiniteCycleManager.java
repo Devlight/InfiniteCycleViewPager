@@ -419,12 +419,10 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                     mCastViewPageable.getLeft(), mCastViewPageable.getTop(),
                     mCastViewPageable.getRight(), mCastViewPageable.getBottom()
             );
-        } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-            if (!mHitRect.contains(
-                    mCastViewPageable.getLeft() + (int) event.getX(),
-                    mCastViewPageable.getTop() + (int) event.getY()
-            )) event.setAction(MotionEvent.ACTION_UP);
-        }
+        } else if (event.getAction() == MotionEvent.ACTION_MOVE && !mHitRect.contains(
+                mCastViewPageable.getLeft() + (int) event.getX(),
+                mCastViewPageable.getTop() + (int) event.getY()
+        )) event.setAction(MotionEvent.ACTION_UP);
     }
 
     // Reset scroller to own
@@ -624,10 +622,9 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                         // Position of center page and we need bring to front immediately
                         else if (position >= 0.0F && position < 0.5F) needBringToFront = true;
                             // If right was not bring we need to set it up and detect if there no bounds
-                        else if (position > 0.5F && position < 1.0F) {
-                            if (!mIsRightPageBringToFront && mViewPageable.getChildCount() > MIN_CYCLE_COUNT)
-                                needBringToFront = true;
-                        }
+                        else if (position > 0.5F && position < 1.0F && !mIsRightPageBringToFront &&
+                                mViewPageable.getChildCount() > MIN_CYCLE_COUNT)
+                            needBringToFront = true;
                     } else {
                         // We move to the right and detect if position if under half of path
                         if (mPageScrolledPositionOffset < 0.5F &&
@@ -650,10 +647,9 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                         // Position of center page and we need bring to front immediately
                         else if (position > -0.5F && position <= 0.0F) needBringToFront = true;
                             // If left was not bring we need to set it up and detect if there no bounds
-                        else if (position > -1.0F && position < -0.5F) {
-                            if (!mIsLeftPageBringToFront && mViewPageable.getChildCount() > MIN_CYCLE_COUNT)
-                                needBringToFront = true;
-                        }
+                        else if (position > -1.0F && position < -0.5F && !mIsLeftPageBringToFront &&
+                                mViewPageable.getChildCount() > MIN_CYCLE_COUNT)
+                            needBringToFront = true;
                     } else {
                         // We move to the left and detect if position if over half of path
                         if (mPageScrolledPositionOffset > 0.5F &&
@@ -702,7 +698,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     }
 
     // OnPageChangeListener which is retrieve info about scroll direction and scroll state
-    protected final OnPageChangeListener mInfinityCyclePageChangeListener = new OnPageChangeListener() {
+    protected final OnPageChangeListener mInfinityCyclePageChangeListener = new ViewPager.SimpleOnPageChangeListener() {
         @Override
         public void onPageScrolled(
                 final int position, final float positionOffset, final int positionOffsetPixels
@@ -748,10 +744,6 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                 mIsLeftPageBringToFront = false;
                 mIsRightPageBringToFront = false;
             }
-        }
-
-        @Override
-        public void onPageSelected(final int position) {
         }
 
         @Override
