@@ -11,7 +11,9 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg?maxAge=2592000&label=License)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fa85dd3c9aa84d879b3e76be8462145e)](https://www.codacy.com/app/gigamole53/InfiniteCycleViewPager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DevLight-Mobile-Agency/InfiniteCycleViewPager&amp;utm_campaign=Badge_Grade)
 
-![](https://lh6.googleusercontent.com/-NioNsWLKTIQ/V7rgiyNXldI/AAAAAAAADA4/4DX08SWta6kJ6-pMr3hM_ClQvj0KByGVQCL0B/w402-h637-no/icvp.gif)
+|   	|   	|   	|
+|:-:	|:-:	|:-:	|
+![](https://lh5.googleusercontent.com/-kDN45A3zU-8/V7r96KSxvgI/AAAAAAAADBk/Z17R7mv5CAQb0zbIcWNcR0dqQn-YQ4JoQCL0B/w402-h636-no/hicvp.gif)|![](https://lh6.googleusercontent.com/-nflNhv4ptsw/V7r96NVI1LI/AAAAAAAADBk/CP66SAzPnDIkrQm6NHTgnYd7CQLMfy17gCL0B/w402-h637-no/vicvp.gif)|![](https://lh5.googleusercontent.com/-2cSHCwCAll4/V7r96HkRF2I/AAAAAAAADBk/MKs8AqBarSEaqWy9dnlOLZwNeRoDxZHlQCL0B/w402-h636-no/twicvp.gif)
 
 U can check the sample app [here](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/tree/master/app).
 
