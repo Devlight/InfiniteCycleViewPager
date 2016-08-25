@@ -123,7 +123,7 @@ Check out in code init:
         infiniteCycleViewPager.setOnInfiniteCyclePageTransformListener(...);
 ```
 
-If your want to get item position just call this metho:
+If you want to get item position just call this method:
 ```java
 infiniteCycleViewPager.getRealItem();
 ```
