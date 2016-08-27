@@ -1,10 +1,12 @@
 package com.gigamole.infinitecycleviewpager;
 
 import android.content.Context;
+import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+import android.view.ViewConfiguration;
 import android.view.animation.Interpolator;
 
 /**
@@ -13,6 +15,7 @@ import android.view.animation.Interpolator;
 public class VerticalInfiniteCycleViewPager extends VerticalViewPager implements ViewPageable {
 
     private InfiniteCycleManager mInfiniteCycleManager;
+    private GestureDetectorCompat moveDetector; // detect whether finger moved
 
     public VerticalInfiniteCycleViewPager(final Context context) {
         super(context);
@@ -25,6 +28,12 @@ public class VerticalInfiniteCycleViewPager extends VerticalViewPager implements
     }
 
     private void init(final Context context, final AttributeSet attributeSet) {
+        ViewConfiguration configuration = ViewConfiguration.get(getContext());
+        int mTouchSlop = configuration.getScaledTouchSlop();
+        moveDetector = new GestureDetectorCompat(context,
+                new HorizontalInfiniteCycleViewPager.MoveDetector(mTouchSlop));
+        moveDetector.setIsLongpressEnabled(false); // does not support long click
+
         mInfiniteCycleManager = new InfiniteCycleManager(context, this, attributeSet);
     }
 
@@ -168,21 +177,18 @@ public class VerticalInfiniteCycleViewPager extends VerticalViewPager implements
 
     @Override
     public boolean onTouchEvent(final MotionEvent ev) {
-        try {
-            return mInfiniteCycleManager == null ? super.onTouchEvent(ev) :
-                    mInfiniteCycleManager.onTouchEvent(ev) && super.onTouchEvent(ev);
-        } catch (IllegalArgumentException e) {
-            return true;
-        }
+        return super.onTouchEvent(ev);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        try {
-            return mInfiniteCycleManager == null ? super.onInterceptTouchEvent(ev) :
-                    mInfiniteCycleManager.onInterceptTouchEvent(ev) && super.onInterceptTouchEvent(ev);
-        } catch (IllegalArgumentException e) {
+        boolean moveFlag = moveDetector.onTouchEvent(ev);
+        if (moveFlag) {
+            // if finger moved, the touch event should be intercepted
+            // and this motionEvent is passed to HorizontalInfiniteCycleViewPager itself to consume
             return true;
+        } else {
+            return super.onInterceptTouchEvent(ev);
         }
     }
 
