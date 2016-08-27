@@ -308,24 +308,13 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         }
     }
 
-    // We are disable multitouch on ViewPager and settling scroll, also we disable outside drag
+    // this method is abandoned
     public boolean onTouchEvent(final MotionEvent event) {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
-            return false;
-        if (mIsSettling || mViewPageable.isFakeDragging()) return false;
-        if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
-            event.setAction(MotionEvent.ACTION_UP);
-        checkHitRect(event);
         return true;
     }
 
+    // this method is abandoned
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
-            return false;
-        if (mIsSettling || mViewPageable.isFakeDragging()) return false;
-        if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
-            event.setAction(MotionEvent.ACTION_UP);
-        checkHitRect(event);
         return true;
     }
 
@@ -469,10 +458,10 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
             // Handle page layer and bounds visibility
             enableHardwareLayer(page);
             if (mItemCount == MIN_CYCLE_COUNT) {
-                if (position > 2.0F || position < -2.0F) {
+                /*if (position > 2.0F || position < -2.0F) {
                     page.setVisibility(GONE);
                     return;
-                } else page.setVisibility(VISIBLE);
+                } else page.setVisibility(VISIBLE);*/
             }
 
             final float pageSize = mIsVertical ? page.getMeasuredHeight() : page.getMeasuredWidth();
