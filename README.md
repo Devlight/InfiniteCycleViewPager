@@ -25,7 +25,7 @@ You can download a `.aar` from GitHub's [releases page](https://github.com/DevLi
 Or use Gradle:
 
 ```groovy
-compile 'com.github.devlight:infinitecycleviewpager:1.0.0'
+compile 'com.github.devlight:infinitecycleviewpager:1.0.1'
 ```
 
 Or Maven:
@@ -34,7 +34,7 @@ Or Maven:
 <dependency>
   <groupId>com.github.devlight</groupId>
   <artifactId>infinitecycleviewpager</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -42,7 +42,7 @@ Or Maven:
 Or Ivy:
 
 ```groovy
-<dependency org='com.github.devlight' name='infinitecycleviewpager' rev='1.0.0'>
+<dependency org='com.github.devlight' name='infinitecycleviewpager' rev='1.0.1'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```

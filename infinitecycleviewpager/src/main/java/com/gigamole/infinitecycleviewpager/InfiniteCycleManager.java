@@ -19,7 +19,6 @@ import java.lang.reflect.Field;
 import static android.support.v4.view.ViewPager.GONE;
 import static android.support.v4.view.ViewPager.OnPageChangeListener;
 import static android.support.v4.view.ViewPager.PageTransformer;
-import static android.support.v4.view.ViewPager.SCROLL_STATE_SETTLING;
 import static android.support.v4.view.ViewPager.VISIBLE;
 import static android.view.View.OVER_SCROLL_NEVER;
 import static com.gigamole.infinitecycleviewpager.InfiniteCyclePagerAdapter.OnNotifyDataSetChangedListener;
@@ -86,8 +85,8 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     private boolean mIsAdapterInitialPosition;
     // Flag for data set changed callback to invalidateTransformer()
     private boolean mIsDataSetChanged;
-    // Detect is ViewPager settling
-    private boolean mIsSettling;
+    // Detect is ViewPager state
+    private int mState;
 
     // Custom transform listener
     private OnInfiniteCyclePageTransformListener mOnInfiniteCyclePageTransformListener;
@@ -274,6 +273,10 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         return mIsVertical;
     }
 
+    public int getState() {
+        return mState;
+    }
+
     public OnInfiniteCyclePageTransformListener getOnInfiniteCyclePageTransformListener() {
         return mOnInfiniteCyclePageTransformListener;
     }
@@ -312,7 +315,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     public boolean onTouchEvent(final MotionEvent event) {
         if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
             return false;
-        if (mIsSettling || mViewPageable.isFakeDragging()) return false;
+        if (mState == ViewPager.SCROLL_STATE_SETTLING || mViewPageable.isFakeDragging()) return false;
         if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
             event.setAction(MotionEvent.ACTION_UP);
         checkHitRect(event);
@@ -320,13 +323,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     }
 
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
-            return false;
-        if (mIsSettling || mViewPageable.isFakeDragging()) return false;
-        if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
-            event.setAction(MotionEvent.ACTION_UP);
-        checkHitRect(event);
-        return true;
+        return onTouchEvent(event);
     }
 
     // When not has window focus clamp to nearest position
@@ -469,7 +466,9 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
             // Handle page layer and bounds visibility
             enableHardwareLayer(page);
             if (mItemCount == MIN_CYCLE_COUNT) {
-                if (position > 2.0F || position < -2.0F) {
+                if (position > 2.0F || position < -2.0F ||
+                        (mStackCount != 0 && position > 1.0F) ||
+                        (mStackCount != 0 && position < -1.0F)) {
                     page.setVisibility(GONE);
                     return;
                 } else page.setVisibility(VISIBLE);
@@ -705,7 +704,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
             mStackCount = 0;
 
             // We need to rewrite states when is dragging and when setCurrentItem() from idle
-            if (!mIsSettling || mIsInitialItem) {
+            if (mState != ViewPager.SCROLL_STATE_SETTLING || mIsInitialItem) {
                 mIsInitialItem = false;
 
                 // Detect first state from idle
@@ -746,7 +745,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
         @Override
         public void onPageScrollStateChanged(final int state) {
-            mIsSettling = state == SCROLL_STATE_SETTLING;
+            mState = state;
         }
     };
 

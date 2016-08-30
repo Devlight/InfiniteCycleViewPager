@@ -177,7 +177,7 @@ public class HorizontalInfiniteCycleViewPager extends ViewPager implements ViewP
     }
 
     @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
+    public boolean onInterceptTouchEvent(final MotionEvent ev) {
         try {
             return mInfiniteCycleManager == null ? super.onInterceptTouchEvent(ev) :
                     mInfiniteCycleManager.onInterceptTouchEvent(ev) && super.onInterceptTouchEvent(ev);
@@ -207,6 +207,11 @@ public class HorizontalInfiniteCycleViewPager extends ViewPager implements ViewP
     public int getRealItem() {
         return mInfiniteCycleManager == null ?
                 getCurrentItem() : mInfiniteCycleManager.getRealItem();
+    }
+
+    public int getState() {
+        return mInfiniteCycleManager == null ?
+                ViewPager.SCROLL_STATE_IDLE : mInfiniteCycleManager.getState();
     }
 
     public void notifyDataSetChanged() {
