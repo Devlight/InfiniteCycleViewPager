@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
@@ -112,6 +113,20 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     private int mScrollDuration;
     // Interpolator of snapping
     private Interpolator mInterpolator;
+
+    // Auto scroll values
+    private boolean mIsAutoScroll;
+    private boolean mIsAutoScrollPositive;
+    // Auto scroll handlers
+    private final Handler mAutoScrollHandler = new Handler();
+    private final Runnable mAutoScrollRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (!mIsAutoScroll) return;
+            mViewPageable.setCurrentItem(getRealItem() + (mIsAutoScrollPositive ? 1 : -1));
+            mAutoScrollHandler.postDelayed(this, mScrollDuration);
+        }
+    };
 
     public InfiniteCycleManager(
             final Context context,
@@ -315,7 +330,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     public boolean onTouchEvent(final MotionEvent event) {
         if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
             return false;
-        if (mState == ViewPager.SCROLL_STATE_SETTLING || mViewPageable.isFakeDragging()) return false;
+        if (mIsAutoScroll || mIsInitialItem || mViewPageable.isFakeDragging()) return false;
         if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
             event.setAction(MotionEvent.ACTION_UP);
         checkHitRect(event);
@@ -343,8 +358,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         if (mIsAdapterInitialPosition) {
             mIsAdapterInitialPosition = false;
             return ((mInfiniteCyclePagerAdapter.getCount() / 2) / count) * count;
-        } else return mViewPageable.getCurrentItem() +
-                (Math.max(0, Math.min(count, item))) - getRealItem();
+        } else return mViewPageable.getCurrentItem() + Math.min(count, item) - getRealItem();
     }
 
     // Need to get current position of original adapter. We cant override getCurrentItem() method,
@@ -446,6 +460,23 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     // Recalculate scale by variable
     private void resetScaleBy() {
         mCenterScaleBy = (mMaxPageScale - mMinPageScale) * 0.5F;
+    }
+
+    // Start auto scroll
+    public void startAutoScroll(final boolean isAutoScrollPositive) {
+        if (mIsAutoScroll && isAutoScrollPositive == mIsAutoScrollPositive) return;
+        mIsAutoScroll = true;
+        mIsAutoScrollPositive = isAutoScrollPositive;
+
+        mAutoScrollHandler.removeCallbacks(mAutoScrollRunnable);
+        mAutoScrollHandler.post(mAutoScrollRunnable);
+    }
+
+    // Stop auto scroll
+    public void stopAutoScroll() {
+        if (!mIsAutoScroll) return;
+        mIsAutoScroll = false;
+        mAutoScrollHandler.removeCallbacks(mAutoScrollRunnable);
     }
 
     @Override
@@ -705,8 +736,6 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
             // We need to rewrite states when is dragging and when setCurrentItem() from idle
             if (mState != ViewPager.SCROLL_STATE_SETTLING || mIsInitialItem) {
-                mIsInitialItem = false;
-
                 // Detect first state from idle
                 if (mOuterPageScrolledState == PageScrolledState.IDLE && positionOffset > 0) {
                     mPageScrolledPosition = mViewPageable.getCurrentItem();
@@ -740,6 +769,8 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                 mWasPlusOne = false;
                 mIsLeftPageBringToFront = false;
                 mIsRightPageBringToFront = false;
+
+                mIsInitialItem = false;
             }
         }
 

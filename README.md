@@ -25,7 +25,7 @@ You can download a `.aar` from GitHub's [releases page](https://github.com/DevLi
 Or use Gradle:
 
 ```groovy
-compile 'com.github.devlight:infinitecycleviewpager:1.0.1'
+compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
 ```
 
 Or Maven:
@@ -34,7 +34,7 @@ Or Maven:
 <dependency>
   <groupId>com.github.devlight</groupId>
   <artifactId>infinitecycleviewpager</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -42,7 +42,7 @@ Or Maven:
 Or Ivy:
 
 ```groovy
-<dependency org='com.github.devlight' name='infinitecycleviewpager' rev='1.0.1'>
+<dependency org='com.github.devlight' name='infinitecycleviewpager' rev='1.0.2'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```
@@ -94,6 +94,10 @@ For `InfiniteCycleViewPager` you can set such parameters as:
  - page transform listener:
    
      allows you to set page transform listener.
+     
+ - auto scroll:
+   
+     allows you to set auto scroll in positive and negative directions.
     
 <b>Tips</b>
 
@@ -131,6 +135,14 @@ infiniteCycleViewPager.getRealItem();
 To update your ViewPager after some adapter update or else, you can call this method:
 ```java
 infiniteCycleViewPager.notifyDataSetChanged();
+```
+
+If you want to start auto scroll or stop call this methods:
+```java
+// true - positive
+// false - negative
+infiniteCycleViewPager.startAutoScroll(...);
+infiniteCycleViewPager.stopAutoScroll();
 ```
 
 Other methods check out in sample.
