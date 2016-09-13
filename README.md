@@ -5,9 +5,9 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 
 [![Devlight](https://cdn.rawgit.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/master/version.svg)](http://devlight.io)
 
-  <a href=&#34;http://leastjs.com&#34; rel=&#34;external&#34; target=&#34;_blank&#34;>
-     <img src=&#34;http://www.leastjs.com/src/img/least_logo.svg&#34;>
-  </a>
+To get a copy of my new e-book, click [here][99 resources].
+
+[99 resources]: http://michaelhyatt.com/99-resources.html (99 Resources to Make Your Personal and Business Life Hum)  target="_blank"
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
