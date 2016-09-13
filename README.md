@@ -3,7 +3,7 @@ InfiniteCycleViewPager
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
-<a href="http://devlight.com.ua" target="_blank">
+<a target="_blank" href="http://devlight.com.ua">
     <img border="0" alt="Devlight" src="https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png">
 </a>
 
