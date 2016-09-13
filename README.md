@@ -3,12 +3,11 @@ InfiniteCycleViewPager
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
-<a href="http://devlight.com.ua" target="_blank">
-    <!--<img border="0" alt="Devlight" src="https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png">-->
-    asdasd
+<a href="http://devlight.com.ua" target="_blank" rel="nofollow">
+    <img border="0" alt="Devlight" src="https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png">
 </a>
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207){.target-blank .rel-nofollow}
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
 [![Download](https://api.bintray.com/packages/gigamole/maven/infinitecycleviewpager/images/download.svg)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg?maxAge=2592000&label=License)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
