@@ -6,12 +6,12 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 [![Devlight](https://cdn.rawgit.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/master/version.svg)](http://devlight.io)
 
 <div align="center">
-  <a href="http://leastjs.com" rel="external">
+  <a href="http://leastjs.com" rel="\"external\"">
      <img src="http://www.leastjs.com/src/img/least_logo.svg">
   </a>
   <br />
   <br />
-  <a href="http://leastjs.com" rel="external">
+  <a href="http://leastjs.com" rel="\"external\"">
     <strong>Visit our Homepage for Demo!</strong>
   </a>
 </div>
