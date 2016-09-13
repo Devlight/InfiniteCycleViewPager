@@ -3,7 +3,9 @@ InfiniteCycleViewPager
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
-[![DevLight](https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png)](http://devlight.com.ua)
+<a href="http://devlight.com.ua" target="_blank">
+    <img border="0" alt="Devlight" src="https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png">
+</a>
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
