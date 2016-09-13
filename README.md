@@ -1,11 +1,13 @@
+<head>
+  <base target="_blank">
+</head>
+
 InfiniteCycleViewPager
 ======================
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
 [![Devlight](https://cdn.rawgit.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/master/version.svg)](http://devlight.io)
-
-&lt;a href="new.html" target="_blank"&gt;Открыть в новом окне&lt;/a&gt;
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
