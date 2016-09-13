@@ -7,7 +7,9 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
     <img border="0" alt="Devlight" src="https://lh4.googleusercontent.com/-9btnRFp_eVo/V5cfwZsBpMI/AAAAAAAAC4E/s4NGoezKhpAVdVofAoez1QWpzK5Na8_cQCL0B/w147-h20-no/devlight-badge.png">
 </a>
 
-__[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)__
+<a href="https://opencollective.com/mochajs/backer/0/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/0/avatar"></a>
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
 [![Download](https://api.bintray.com/packages/gigamole/maven/infinitecycleviewpager/images/download.svg)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg?maxAge=2592000&label=License)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
