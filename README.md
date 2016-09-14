@@ -3,16 +3,18 @@
       <img style="width: 50%; height: 50%" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
   </a>
 </p>
+<br/>
+<br/>
 
 InfiniteCycleViewPager
 ======================
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
-[![Android Arsenal](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScbldGMXh5VjBjZEE)](http://android-arsenal.com/details/1/4207)
-[![Android](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccEZaclNGN0R5OWc)](https://github.com/DevLight-Mobile-Agency)
-[![Download](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScTkFkZk1UdEN3MHM)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)
-[![License](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScU0tmeFpGMHVWNWs)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
+[![Android Arsenal](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScbldGMXh5VjBjZEE)](http://android-arsenal.com/details/1/4207)&nbsp;&nbsp;&nbsp;
+[![Android](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccEZaclNGN0R5OWc)](https://github.com/DevLight-Mobile-Agency)&nbsp;&nbsp;&nbsp;
+[![Download](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScTkFkZk1UdEN3MHM)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)&nbsp;&nbsp;&nbsp;
+[![License](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScU0tmeFpGMHVWNWs)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)&nbsp;&nbsp;&nbsp;
 [![Codacy](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScSHhmckZyeGJDcXc)](https://www.codacy.com/app/gigamole53/InfiniteCycleViewPager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DevLight-Mobile-Agency/InfiniteCycleViewPager&amp;utm_campaign=Badge_Grade)
 
 |   	|   	|   	|
