@@ -1,11 +1,13 @@
+<a href="http://devlight.io" style="text-align:center">
+    <img src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScOUZISHpsMC1nQ2M" alt="Devlight" />
+</a>
+
 InfiniteCycleViewPager
 ======================
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
 [![Devlight](https://cdn.rawgit.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/master/version.svg)](http://devlight.io)
-
-<a href="http://chriscoyier.net" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">This link will open in new window/tab</a>
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfiniteCycleViewPager-yellow.svg?style=flat)](http://android-arsenal.com/details/1/4207)
 [![Android](https://img.shields.io/badge/platform-android-brightgreen.svg?style=flat&label=Platform)](https://github.com/DevLight-Mobile-Agency)
