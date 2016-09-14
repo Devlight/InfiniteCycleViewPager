@@ -199,6 +199,7 @@ Company
 =======
 
 [Here](https://github.com/DevLight-Mobile-Agency) you can see open source work developed by Devlight LLC.
+\s\s
 This and another works is an exclusive property of Devlight LLC. 
 
 If you want to use this library in applications which will be available on Google Play, please report about it to us or to the author of the library.
