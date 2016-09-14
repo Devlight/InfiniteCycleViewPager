@@ -28,7 +28,7 @@ public class VerticalPagerFragment extends Fragment {
 
         final VerticalInfiniteCycleViewPager verticalInfiniteCycleViewPager =
                 (VerticalInfiniteCycleViewPager) view.findViewById(R.id.vicvp);
-        verticalInfiniteCycleViewPager.setAdapter(new VerticalPagerAdapter(getContext(), null));
+        verticalInfiniteCycleViewPager.setAdapter(new VerticalPagerAdapter(getContext()));
 
         verticalInfiniteCycleViewPager.setScrollDuration(1000);
         verticalInfiniteCycleViewPager.startAutoScroll(true);

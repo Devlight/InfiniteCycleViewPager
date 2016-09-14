@@ -8,8 +8,17 @@
     android:background="#fff"
     android:clipChildren="false"
     android:clipToPadding="false"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".screens.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:padding="8dp"
+        android:src="@drawable/logo_small"/>
 
     <com.gigamole.navigationtabstrip.NavigationTabStrip
         android:id="@+id/nts"
@@ -19,9 +28,9 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         app:nts_active_color="@android:color/black"
-        app:nts_color="@android:color/holo_orange_dark"
+        app:nts_color="#ffa70b"
         app:nts_gravity="bottom"
         app:nts_inactive_color="@android:color/darker_gray"
         app:nts_size="13sp"
@@ -41,8 +50,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:cacheColorHint="#00000000"
-            android:background="@drawable/overlay_top"/>
+            android:background="@drawable/overlay_top"
+            android:cacheColorHint="#00000000"/>
 
     </FrameLayout>
 

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setOffscreenPageLimit(2);
 
         final NavigationTabStrip navigationTabStrip = (NavigationTabStrip) findViewById(R.id.nts);
-        navigationTabStrip.setTitles("HORIZONTAL", "VERTICAL", "TWO-WAY");
+        navigationTabStrip.setTitles("HOW WE WORK", "WE WORK WITH");
         navigationTabStrip.setViewPager(viewPager);
     }
 }

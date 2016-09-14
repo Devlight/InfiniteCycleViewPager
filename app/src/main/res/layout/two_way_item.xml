@@ -16,6 +16,7 @@
         app:icvp_medium_scaled="true"
         app:icvp_min_page_scale="0.6"
         app:icvp_min_page_scale_offset="0dp"
-        app:icvp_scroll_duration="600"/>
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="250"/>
 
 </com.gigamole.sample.utils.SquareFrameLayout>

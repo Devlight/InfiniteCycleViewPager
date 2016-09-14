@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             xmlns:app="http://schemas.android.com/apk/res-auto">
+             android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardUseCompatPadding="true"
-        app:cardPreventCornerOverlap="false"
+        android:layout_gravity="center"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp">
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
 
-        <com.gigamole.sample.utils.TintSelectorImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/ic_delivery"/>
+
+                <TextView
+                    android:id="@+id/txt_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:textColor="#005fb0"
+                    android:textSize="36sp"
+                    android:typeface="sans"
+                    tools:text="Delivery"/>
+
+            </LinearLayout>
 
     </android.support.v7.widget.CardView>
 

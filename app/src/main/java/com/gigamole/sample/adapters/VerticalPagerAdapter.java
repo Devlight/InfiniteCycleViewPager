@@ -5,51 +5,63 @@ import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.gigamole.sample.R;
 import com.gigamole.sample.utils.Utils;
 
-import static com.gigamole.sample.utils.Utils.setupImage;
+import static com.gigamole.sample.utils.Utils.setupItem;
 
 /**
  * Created by GIGAMOLE on 7/27/16.
  */
 public class VerticalPagerAdapter extends PagerAdapter {
 
-    private final Utils.LibraryObject[] LIBRARIES = new Utils.LibraryObject[]{
+    private final Utils.LibraryObject[] TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{
             new Utils.LibraryObject(
-                    "https://github.com/DevLight-Mobile-Agency/PulseView",
-                    "https://lh4.googleusercontent.com/-mqVBaXK0XM0/VyhroJmmU7I/AAAAAAAACUs/OmfzeRZsYNQhNAdgFmKvFIU5XDiJ3-z3wCL0B/w401-h689-no/pv.gif"
+                    R.drawable.ic_fintech,
+                    "Fintech"
             ),
             new Utils.LibraryObject(
-                    "https://github.com/DevLight-Mobile-Agency/ArcProgressStackView",
-                    "https://lh3.googleusercontent.com/-5wahrBgdCTw/VuwHChXS3FI/AAAAAAAACNQ/eqpqhfnN5G0l3EnETDQ_I5qu4kqQYSysA/w327-h551-no/apsv_preview_size_cb.gif"
+                    R.drawable.ic_delivery,
+                    "Delivery"
             ),
             new Utils.LibraryObject(
-                    "https://github.com/DevLight-Mobile-Agency/CutIntoLayout",
-                    "https://lh3.googleusercontent.com/fWz9orE3M8vaAuzkxHi0F2m23iuHUYlXmG-lgonEFCU=w210-h282-no"
+                    R.drawable.ic_social,
+                    "Social network"
             ),
             new Utils.LibraryObject(
-                    "https://github.com/DevLight-Mobile-Agency/TintLayout",
-                    "https://lh3.googleusercontent.com/zwCLyDjZMVM2O571j6gwReHbkAolr7DV3XyKy5hqTug=s308-no"
+                    R.drawable.ic_ecommerce,
+                    "E-commerce"
+            ),
+            new Utils.LibraryObject(
+                    R.drawable.ic_wearable,
+                    "Wearable"
+            ),
+            new Utils.LibraryObject(
+                    R.drawable.ic_internet,
+                    "Internet of things"
             )
     };
 
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    private Utils.LibraryObject mLibraryObject;
+    private int mOffset;
 
-    public VerticalPagerAdapter(final Context context, final Utils.LibraryObject libraryObject) {
+    public VerticalPagerAdapter(final Context context) {
+        this(context, 0);
+    }
+
+    public VerticalPagerAdapter(final Context context, final int offset) {
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
-        mLibraryObject = libraryObject;
+
+        mOffset = offset;
     }
 
     @Override
     public int getCount() {
-        return mLibraryObject == null ? LIBRARIES.length : mLibraryObject.getImages().length;
+        return TWO_WAY_LIBRARIES.length;
     }
 
     @Override
@@ -61,10 +73,10 @@ public class VerticalPagerAdapter extends PagerAdapter {
     public Object instantiateItem(final ViewGroup container, final int position) {
         final View view = mLayoutInflater.inflate(R.layout.item, container, false);
 
-        if (mLibraryObject == null)
-            setupImage(mContext, (ImageView) view.findViewById(R.id.image), LIBRARIES[position]);
-        else
-            setupImage(mContext, (ImageView) view.findViewById(R.id.image), mLibraryObject, position);
+//        int offsetPosition = position + mOffset;
+//        if (offsetPosition > getCount() - 1) offsetPosition -= getCount() - 1;
+
+        setupItem(view, TWO_WAY_LIBRARIES[position]);
 
         container.addView(view);
         return view;
