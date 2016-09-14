@@ -24,9 +24,9 @@ Infinite cycle ViewPager with two-way orientation and interactive effect.
 <br/>
 
 <p align="center">
-    <img src="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScNmRmWXAzRmRwNHM"/>
-    &nbsp;
     <img src="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScS0hwRTZUaG16Znc"/>
+    &nbsp;
+    <img src="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScNmRmWXAzRmRwNHM"/>
 </p>
 
 U can check the sample app [here](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/tree/master/app).
