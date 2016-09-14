@@ -129,17 +129,17 @@ Check out in code init:
         infiniteCycleViewPager.setOnInfiniteCyclePageTransformListener(...);
 ```
 
-If you want to get item position just call this method:
+If you want to get item position just call this method:  
 ```java
 infiniteCycleViewPager.getRealItem();
 ```
           
-To update your ViewPager after some adapter update or else, you can call this method:
+To update your ViewPager after some adapter update or else, you can call this method:  
 ```java
 infiniteCycleViewPager.notifyDataSetChanged();
 ```
 
-If you want to start auto scroll or stop call this methods:
+If you want to start auto scroll or stop call this methods:  
 ```java
 // true - positive
 // false - negative
