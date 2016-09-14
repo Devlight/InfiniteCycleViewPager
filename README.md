@@ -195,9 +195,22 @@ Author
 
 Created by [Basil Miller](https://github.com/GIGAMOLE) - [@gigamole](mailto:gigamole53@gmail.com)
 
-Support
+Company
 =======
 
-Also, if you use this library in applications that are available on Google Play, please report it to us or author.
+[Here](https://github.com/DevLight-Mobile-Agency) you can see open source work developed by Devlight LLC. 
+This and another works is an exclusive property of Devlight LLC. 
+
+If you want to use this library in applications which will be available on Google Play, please report about it to us or to the author of the library.
+
+Also you can find us on: [Facebook](https://www.facebook.com/devlightagency), [Twitter](https://twitter.com/DevLightIO), [LinkedIn](https://www.linkedin.com/company/devlight).
+
+Whether you're searching for a new partner or trusted team for creating your new great product we are always ready to start work with you. 
+
+You can contact us via info@devlight.io or opensource@devlight.io.
 
 Thanks in advance.
+
+Devlight LLC, 2016
+[devlight.io](http://devlight.io) 
+
