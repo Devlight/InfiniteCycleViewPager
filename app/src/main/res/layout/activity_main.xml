@@ -18,7 +18,7 @@
         android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
         android:padding="8dp"
-        android:src="@drawable/logo_small"/>
+        android:src="@drawable/ic_logo"/>
 
     <com.gigamole.navigationtabstrip.NavigationTabStrip
         android:id="@+id/nts"

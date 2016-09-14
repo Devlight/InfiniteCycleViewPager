@@ -73,9 +73,6 @@ public class VerticalPagerAdapter extends PagerAdapter {
     public Object instantiateItem(final ViewGroup container, final int position) {
         final View view = mLayoutInflater.inflate(R.layout.item, container, false);
 
-//        int offsetPosition = position + mOffset;
-//        if (offsetPosition > getCount() - 1) offsetPosition -= getCount() - 1;
-
         setupItem(view, TWO_WAY_LIBRARIES[position]);
 
         container.addView(view);
