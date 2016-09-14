@@ -1,9 +1,8 @@
-
-<div style="text-align:center; padding:50px;">
-    <a href="http://devlight.io">
-        <img align="center" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
-    </a>
-</div>
+<p align="center">
+  <a href="http://devlight.io" target="_blank">
+      <img align="center" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
+  </a>
+</p>
 
 InfiniteCycleViewPager
 ======================
