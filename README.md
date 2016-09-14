@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="http://devlight.io" target="_blank">
-      <img align="center" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
+  <a href="http://devlight.io">
+      <img style="width: 50%; height: 50%" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
   </a>
 </p>
 
