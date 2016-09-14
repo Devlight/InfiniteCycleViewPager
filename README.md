@@ -198,7 +198,7 @@ Created by [Basil Miller](https://github.com/GIGAMOLE) - [@gigamole](mailto:giga
 Company
 =======
 
-[Here](https://github.com/DevLight-Mobile-Agency) you can see open source work developed by Devlight LLC.\s\s
+[Here](https://github.com/DevLight-Mobile-Agency) you can see open source work developed by Devlight LLC.  
 This and another works is an exclusive property of Devlight LLC. 
 
 If you want to use this library in applications which will be available on Google Play, please report about it to us or to the author of the library.
@@ -211,6 +211,6 @@ You can contact us via info@devlight.io or opensource@devlight.io.
 
 Thanks in advance.
 
-Devlight LLC, 2016
+Devlight LLC, 2016  
 [devlight.io](http://devlight.io) 
 
