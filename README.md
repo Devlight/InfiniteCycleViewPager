@@ -190,7 +190,8 @@ Credits
 
 |[Yegor Kosinov](https://dribbble.com/Kosinov)|[Prakhar Neel Sharma](https://dribbble.com/prakhar)|
 |:-------------------------------------------:|:-------------------------------------------------:|
-[![](https://d13yacurqjgara.cloudfront.net/users/1169587/screenshots/2832006/cinema_app_gif.gif)](https://dribbble.com/shots/2832006-Cinema-App)|[![](https://d13yacurqjgara.cloudfront.net/users/452635/screenshots/2383427/festival.png)](https://dribbble.com/shots/2383427-Personal-Festival-App-Finally-Done)
+[![](https://d13yacurqjgara.cloudfront.net/users/1169587/screenshots/2832006/cinema_app_gif.gif)](https://dribbble.com/shots/2832006-Cinema-App)
+|[![](https://d13yacurqjgara.cloudfront.net/users/452635/screenshots/2383427/festival.png)](https://dribbble.com/shots/2383427-Personal-Festival-App-Finally-Done)
 
 Author
 =======
