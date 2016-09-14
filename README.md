@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="http://devlight.io">
-      <img style="width: 50%; height: 50%" src ="https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM" alt="Devlight"/>
-  </a>
+  [![Devlight](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccjJaVThzdE5YMHM)](http://devlight.io)
 </p>
 
 InfiniteCycleViewPager
