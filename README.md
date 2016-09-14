@@ -73,52 +73,40 @@ Sample
 
 For `InfiniteCycleViewPager` you can set such parameters as:
  
- - min scale:
-    
+ - min scale:  
      allows you to set the minimum scale of left and right bottom pages.
     
- - max scale:
-     
+ - max scale:  
      allows you to set the maximum scale of center top page.
     
- - min scale offset:
-     
+ - min scale offset:  
      allows you to set offset from edge to minimum scaled pages.
          
- - center scale offset:
- 
+ - center scale offset:  
     allows you to set offset from center when two pages appears.
 
- - model selected icon:
-    
+ - model selected icon:  
      allows you to set selected icon when current model is active.
 
- - medium scaled:
-    
+ - medium scaled:  
      allows you to set is scaling would be min -> max or min -> medium -> max.
     
- - scroll duration:
-     
+ - scroll duration:  
      allows you to set snap scrolling duration.
      
- - scroll interpolator:
-     
+ - scroll interpolator:  
      allows you to set snap scrolling interpolator.
     
- - page transform listener:
-   
+ - page transform listener:  
      allows you to set page transform listener.
      
- - auto scroll:
-   
+ - auto scroll:  
      allows you to set auto scroll in positive and negative directions.
     
 <b>Tips</b>
 
-Two-way widget need a lot of memory.
-
-Infinite scroll available when item count more then 2.
-
+Two-way widget need a lot of memory.  
+Infinite scroll available when item count more then 2.  
 You can set vertical or horizontal infinite cycle ViewPager.
 
 <b>Init</b>
