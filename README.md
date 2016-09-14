@@ -185,33 +185,20 @@ Getting Help
 
 To report a specific problem or feature request, [open a new issue on Github](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/issues/new).
 
-License
-======
+Credits
+=======
 
-Apache 2.0 and MIT. See [LICENSE](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt) file for details.
-
-Inspiration
-===========
-
-|   	|   	|
-|:-:	|:-:	|
-![](https://lh5.googleusercontent.com/-pUxe24V4ePI/V7sDRnBIN9I/AAAAAAAADEM/0U3G2lB_HmAbNFO6qOLO6yQ02f1jTjAFgCL0B/w520-h390-no/icvp.gif)|![](http://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2016/05/personal-festival-app-beautiful-mobile-ui.jpg?097e9c)
+|[Yegor Kosinov](https://dribbble.com/Kosinov)|[Prakhar Neel Sharma](https://dribbble.com/prakhar)|
+|:-------------------------------------------:|:-------------------------------------------------:|
+[![](https://d13yacurqjgara.cloudfront.net/users/1169587/screenshots/2832006/cinema_app_gif.gif)](https://dribbble.com/shots/2832006-Cinema-App)|[![](https://d13yacurqjgara.cloudfront.net/users/452635/screenshots/2383427/festival.png)](https://dribbble.com/shots/2383427-Personal-Festival-App-Finally-Done)
 
 Author
 =======
-
-Made in [DevLight Mobile Agency](https://github.com/DevLight-Mobile-Agency)
 
 Created by [Basil Miller](https://github.com/GIGAMOLE) - [@gigamole](mailto:gigamole53@gmail.com)
 
 Support
 =======
-
-If you'd like to support future development and new product features, please make a payments on Gratipay and Beerpay or become a patron on Patreon.
-
-[![Gratipay](https://img.shields.io/gratipay/user/gigamole.svg?maxAge=2592000)](https://gratipay.com/~GIGAMOLE/)
-[![Beerpay](https://beerpay.io/DevLight-Mobile-Agency/InfiniteCycleViewPager/badge.svg?style=flat)](https://beerpay.io/DevLight-Mobile-Agency/InfiniteCycleViewPager)
-[![Patreon](https://lh5.googleusercontent.com/-lXI_oKp5724/V58ysdDtxHI/AAAAAAAAC7s/g91W_YT2SM0Q_VaIhDAMmoe-jHPP3ijJwCL0B/w140-h20-no/patreon-badge.png)](https://www.patreon.com/gigamole)
 
 Also, if you use this library in applications that are available on Google Play, please report it to us or author.
 
