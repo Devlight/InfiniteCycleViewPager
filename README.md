@@ -11,16 +11,20 @@ InfiniteCycleViewPager
 
 Infinite cycle ViewPager with two-way orientation and interactive effect.
 
-[![Android Arsenal](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScbldGMXh5VjBjZEE)](http://android-arsenal.com/details/1/4207)&#xB;
-[![Android](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccEZaclNGN0R5OWc)](https://github.com/DevLight-Mobile-Agency)&#xB;
-[![Download](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScTkFkZk1UdEN3MHM)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)&#xB;
-[![License](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScU0tmeFpGMHVWNWs)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)&#xB;
+[![Android Arsenal](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScbldGMXh5VjBjZEE)](http://android-arsenal.com/details/1/4207)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Android](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccEZaclNGN0R5OWc)](https://github.com/DevLight-Mobile-Agency)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Download](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScTkFkZk1UdEN3MHM)](https://bintray.com/gigamole/maven/infinitecycleviewpager/_latestVersion)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![License](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScU0tmeFpGMHVWNWs)](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/blob/master/LICENSE.txt)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Codacy](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScSHhmckZyeGJDcXc)](https://www.codacy.com/app/gigamole53/InfiniteCycleViewPager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DevLight-Mobile-Agency/InfiniteCycleViewPager&amp;utm_campaign=Badge_Grade)
 
 <br/>
 
-|   	|   	|   	|
-|:-:	|:-:	|:-:	|
+| | | |
+|-|-|-|
 ![](https://lh5.googleusercontent.com/-DpQ9a_kxOhg/V7sDRu6BFlI/AAAAAAAADEM/NLIYoehpbq41sx6qTd5JZ3rrkE6xHQ4RQCL0B/w241-h381-no/hicvp.gif)|![](https://lh6.googleusercontent.com/-eojSc_l1OLs/V7sDRvJYKWI/AAAAAAAADEM/ZrWnluueFjsKw9vLrrcLaYS1P-DMgcoEQCL0B/w241-h382-no/vicvp.gif)|![](https://lh3.googleusercontent.com/-qRRmP-bR-fg/V7sDRjviAYI/AAAAAAAADEM/jMhU4PR4ZqAsScoMz-k8ECCAlGgrY2phQCL0B/w241-h381-no/twicvp.gif)
 
 U can check the sample app [here](https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager/tree/master/app).
