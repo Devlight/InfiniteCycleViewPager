@@ -192,17 +192,16 @@ Created by [Basil Miller](https://github.com/GIGAMOLE) - [@gigamole](mailto:giga
 Company
 =======
 
+[![Facebook](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScaGhGVFNKU0VxMnc)](https://www.facebook.com/devlightagency)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Twitter](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScZ1ExQWh5cHF5cVE)](https://twitter.com/DevLightIO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![LinkedIn](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccGZINzEycE1nVFE)](https://www.linkedin.com/company/devlight)
+
 [Here](https://github.com/DevLight-Mobile-Agency) you can see open source work developed by Devlight LLC.  
 This and another works is an exclusive property of Devlight LLC. 
 
-If you want to use this library in applications which will be available on Google Play, please report about it to us or to the author of the library.
+If you want to use this library in applications which will be available on Google Play, please report us about it or author of the library.
 
 Whether you're searching for a new partner or trusted team for creating your new great product we are always ready to start work with you. 
 
-You can contact us via info@devlight.io or opensource@devlight.io.
-
-[![Facebook](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScaGhGVFNKU0VxMnc)](https://www.facebook.com/devlightagency)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Twitter](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScZ1ExQWh5cHF5cVE)](https://twitter.com/DevLightIO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![LinkedIn](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wSccGZINzEycE1nVFE)](https://www.linkedin.com/company/devlight)
-
+You can contact us via info@devlight.io or opensource@devlight.io.  
 Thanks in advance.
 
 Devlight LLC, 2016  
