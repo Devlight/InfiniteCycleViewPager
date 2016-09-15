@@ -174,7 +174,7 @@ To report a specific problem or feature request, [open a new issue on Github](ht
 Xamarin
 =======
 
-Thanks to [Martijn van Dijk](https://github.com/martijn00) for developing Xamarin bindings library for `InfiniteCycleViewPager`.  
+Thanks to [Martijn van Dijk](https://github.com/martijn00) for developing Xamarin bindings library for [InfiniteCycleViewPager](https://github.com/martijn00/InfiniteCycleViewPagerXamarin).  
 Plugin is available on [Nuget](https://www.nuget.org/packages/Xam.Plugins.Android.InfiniteCycleViewPager/).
 
 Credits
