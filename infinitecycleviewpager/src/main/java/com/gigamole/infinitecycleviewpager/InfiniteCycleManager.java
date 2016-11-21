@@ -9,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -278,9 +279,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         return mOnInfiniteCyclePageTransformListener;
     }
 
-    public void setOnInfiniteCyclePageTransformListener(
-            final OnInfiniteCyclePageTransformListener onInfiniteCyclePageTransformListener
-    ) {
+    public void setOnInfiniteCyclePageTransformListener(final OnInfiniteCyclePageTransformListener onInfiniteCyclePageTransformListener) {
         mOnInfiniteCyclePageTransformListener = onInfiniteCyclePageTransformListener;
     }
 
@@ -292,11 +291,11 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         return mInfiniteCyclePagerAdapter;
     }
 
-    public PagerAdapter setAdapter(final PagerAdapter adapter) {
+    public PagerAdapter setAdapter(final InfiniteCyclePagerAdapter adapter) {
         // If adapter count bigger then 2 need to set InfiniteCyclePagerAdapter
-        if (adapter != null && adapter.getCount() >= MIN_CYCLE_COUNT) {
-            mItemCount = adapter.getCount();
-            mInfiniteCyclePagerAdapter = new InfiniteCyclePagerAdapter(adapter);
+        if (adapter != null && adapter.getItemCount() >= MIN_CYCLE_COUNT) {
+            mItemCount = adapter.getItemCount();
+            mInfiniteCyclePagerAdapter = adapter;
             mInfiniteCyclePagerAdapter.setOnNotifyDataSetChangedListener(this);
             return mInfiniteCyclePagerAdapter;
         } else {
@@ -310,7 +309,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
     // We are disable multitouch on ViewPager and settling scroll, also we disable outside drag
     public boolean onTouchEvent(final MotionEvent event) {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
+        if (mViewPageable.getAdapter() == null || getCount() == 0)
             return false;
         if (mIsSettling || mViewPageable.isFakeDragging()) return false;
         if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
@@ -319,8 +318,20 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         return true;
     }
 
+    private int getCount() {
+        int count;
+//        PagerAdapter adapter = mViewPageable.getAdapter();
+//        if (adapter instanceof InfiniteCyclePagerAdapter) {
+//            count = ((InfiniteCyclePagerAdapter) adapter).getCount();
+//        } else {
+            count = mViewPageable.getAdapter().getCount();
+//        }
+        Log.e("Pager", "getCount: " + count);
+        return count;
+    }
+
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0)
+        if (mViewPageable.getAdapter() == null || getCount() == 0)
             return false;
         if (mIsSettling || mViewPageable.isFakeDragging()) return false;
         if (event.getPointerCount() > MIN_POINTER_COUNT || !mViewPageable.hasWindowFocus())
@@ -340,9 +351,9 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         mIsInitialItem = true;
 
         if (mViewPageable.getAdapter() == null ||
-                mViewPageable.getAdapter().getCount() < MIN_CYCLE_COUNT) return item;
+                getCount() < MIN_CYCLE_COUNT) return item;
 
-        final int count = mViewPageable.getAdapter().getCount();
+        final int count = getCount();
         if (mIsAdapterInitialPosition) {
             mIsAdapterInitialPosition = false;
             return ((mInfiniteCyclePagerAdapter.getCount() / 2) / count) * count;
@@ -354,7 +365,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
     // because ViewPager must have original item count relative to virtual adapter count
     public int getRealItem() {
         if (mViewPageable.getAdapter() == null ||
-                mViewPageable.getAdapter().getCount() < MIN_CYCLE_COUNT)
+                getCount() < MIN_CYCLE_COUNT)
             return mViewPageable.getCurrentItem();
         return mInfiniteCyclePagerAdapter.getVirtualPosition(mViewPageable.getCurrentItem());
     }
@@ -370,7 +381,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
     // If you need to update transformer call this method, which is trigger fake scroll
     public void invalidateTransformer() {
-        if (mViewPageable.getAdapter() == null || mViewPageable.getAdapter().getCount() == 0 ||
+        if (mViewPageable.getAdapter() == null || getCount() == 0 ||
                 mViewPageable.getChildCount() == 0) return;
         if (mViewPageable.beginFakeDrag()) {
             mViewPageable.fakeDragBy(0.0F);

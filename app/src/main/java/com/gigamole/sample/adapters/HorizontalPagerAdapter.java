@@ -1,12 +1,12 @@
 package com.gigamole.sample.adapters;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.gigamole.infinitecycleviewpager.InfiniteCyclePagerAdapter;
 import com.gigamole.infinitecycleviewpager.VerticalInfiniteCycleViewPager;
 import com.gigamole.sample.R;
 import com.gigamole.sample.utils.Utils;
@@ -16,7 +16,7 @@ import static com.gigamole.sample.utils.Utils.setupImage;
 /**
  * Created by GIGAMOLE on 7/27/16.
  */
-public class HorizontalPagerAdapter extends PagerAdapter {
+public class HorizontalPagerAdapter extends InfiniteCyclePagerAdapter {
 
     private final Utils.LibraryObject[] LIBRARIES = new Utils.LibraryObject[]{
             new Utils.LibraryObject(
@@ -71,7 +71,7 @@ public class HorizontalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getItemCount() {
         return mIsTwoWay ? TWO_WAY_LIBRARIES.length : LIBRARIES.length;
     }
 
@@ -81,7 +81,7 @@ public class HorizontalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public Object instantiateItem(final ViewGroup container, final int position) {
+    public Object instantiateItemView(final ViewGroup container, final int position) {
         final View view;
         if (mIsTwoWay) {
             view = mLayoutInflater.inflate(R.layout.two_way_item, container, false);
@@ -107,7 +107,7 @@ public class HorizontalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(final ViewGroup container, final int position, final Object object) {
+    public void destroyItemView(final ViewGroup container, final int position, final Object object) {
         container.removeView((View) object);
     }
 }

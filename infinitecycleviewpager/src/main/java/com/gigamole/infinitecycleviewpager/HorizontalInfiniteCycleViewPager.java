@@ -154,8 +154,12 @@ public class HorizontalInfiniteCycleViewPager extends ViewPager implements ViewP
     public void setAdapter(final PagerAdapter adapter) {
         if (mInfiniteCycleManager == null) super.setAdapter(adapter);
         else {
-            super.setAdapter(mInfiniteCycleManager.setAdapter(adapter));
-            mInfiniteCycleManager.resetPager();
+            if (adapter instanceof InfiniteCyclePagerAdapter) {
+                super.setAdapter(mInfiniteCycleManager.setAdapter((InfiniteCyclePagerAdapter) adapter));
+                mInfiniteCycleManager.resetPager();
+            } else {
+                throw new IllegalArgumentException("adapter should be InfiniteCyclePagerAdapter");
+            }
         }
     }
 

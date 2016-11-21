@@ -1,12 +1,12 @@
 package com.gigamole.sample.adapters;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.gigamole.infinitecycleviewpager.InfiniteCyclePagerAdapter;
 import com.gigamole.sample.R;
 import com.gigamole.sample.utils.Utils;
 
@@ -15,7 +15,7 @@ import static com.gigamole.sample.utils.Utils.setupImage;
 /**
  * Created by GIGAMOLE on 7/27/16.
  */
-public class VerticalPagerAdapter extends PagerAdapter {
+public class VerticalPagerAdapter extends InfiniteCyclePagerAdapter {
 
     private final Utils.LibraryObject[] LIBRARIES = new Utils.LibraryObject[]{
             new Utils.LibraryObject(
@@ -48,7 +48,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getItemCount() {
         return mLibraryObject == null ? LIBRARIES.length : mLibraryObject.getImages().length;
     }
 
@@ -58,7 +58,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public Object instantiateItem(final ViewGroup container, final int position) {
+    public Object instantiateItemView(final ViewGroup container, final int position) {
         final View view = mLayoutInflater.inflate(R.layout.item, container, false);
 
         if (mLibraryObject == null)
@@ -76,7 +76,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(final ViewGroup container, final int position, final Object object) {
+    public void destroyItemView(final ViewGroup container, final int position, final Object object) {
         container.removeView((View) object);
     }
 }
