@@ -61,7 +61,7 @@ public abstract class InfiniteCyclePagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object o) {
-        return view == o;
+        return view.equals(o);
     }
 
     @Override
