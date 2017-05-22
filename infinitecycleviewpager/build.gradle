@@ -47,7 +47,7 @@ dependencies {
 
 def siteUrl = 'https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager'
 def gitUrl = 'https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager.git'
-group = "com.github.ishaansrm"
+group = "com.github.devlight"
 
 install {
     repositories.mavenInstaller {
