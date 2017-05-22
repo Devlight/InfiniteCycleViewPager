@@ -80,6 +80,14 @@ public class HorizontalInfiniteCycleViewPager extends ViewPager implements ViewP
         if (mInfiniteCycleManager != null) mInfiniteCycleManager.setScrollDuration(scrollDuration);
     }
 
+    public int getPageDuration() {
+        return mInfiniteCycleManager == null ? 0 : mInfiniteCycleManager.getPageDuration();
+    }
+
+    public void setPageDuration(final int pageDuration) {
+        if (mInfiniteCycleManager != null) mInfiniteCycleManager.setPageDuration(pageDuration);
+    }
+
     public Interpolator getInterpolator() {
         return mInfiniteCycleManager == null ? null : mInfiniteCycleManager.getInterpolator();
     }

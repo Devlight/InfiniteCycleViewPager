@@ -31,6 +31,7 @@ public class TwoWayPagerFragment extends Fragment {
         horizontalInfiniteCycleViewPager.setAdapter(new HorizontalPagerAdapter(getContext(), true));
 //
 //        horizontalInfiniteCycleViewPager.setScrollDuration(500);
+//        horizontalInfiniteCycleViewPager.setPageDuration(1000);
 //        horizontalInfiniteCycleViewPager.setInterpolator(null);
 //        horizontalInfiniteCycleViewPager.setMediumScaled(true);
 //        horizontalInfiniteCycleViewPager.setMaxPageScale(1.0F);
