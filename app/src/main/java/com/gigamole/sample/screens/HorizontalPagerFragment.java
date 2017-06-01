@@ -31,6 +31,7 @@ public class HorizontalPagerFragment extends Fragment {
         horizontalInfiniteCycleViewPager.setAdapter(new HorizontalPagerAdapter(getContext(), false));
 
 //        horizontalInfiniteCycleViewPager.setScrollDuration(400);
+//        horizontalInfiniteCycleViewPager.setPageDuration(1000);
 //        horizontalInfiniteCycleViewPager.setInterpolator(
 //                AnimationUtils.loadInterpolator(getContext(), android.R.anim.overshoot_interpolator)
 //        );

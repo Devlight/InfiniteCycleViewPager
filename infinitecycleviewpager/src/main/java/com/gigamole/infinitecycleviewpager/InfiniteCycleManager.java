@@ -111,6 +111,8 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
     // Scroll duration of snapping
     private int mScrollDuration;
+    // Duration for which a page will be shown before moving on to next one when {@link mIsAutoScroll} is TRUE
+    private int mPageDuration;
     // Interpolator of snapping
     private Interpolator mInterpolator;
 
@@ -124,7 +126,7 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
         public void run() {
             if (!mIsAutoScroll) return;
             mViewPageable.setCurrentItem(getRealItem() + (mIsAutoScrollPositive ? 1 : -1));
-            mAutoScrollHandler.postDelayed(this, mScrollDuration);
+            mAutoScrollHandler.postDelayed(this, mPageDuration);
         }
     };
 
@@ -203,6 +205,13 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
                             DEFAULT_SCROLL_DURATION
                     )
             );
+            setPageDuration(
+                    typedArray.getInteger(
+                            mIsVertical ? R.styleable.VerticalInfiniteCycleViewPager_icvp_page_duration :
+                                    R.styleable.HorizontalInfiniteCycleViewPager_icvp_page_duration,
+                            DEFAULT_SCROLL_DURATION
+                    )
+            );
 
             // Retrieve interpolator
             Interpolator interpolator = null;
@@ -272,6 +281,15 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
     public void setScrollDuration(final int scrollDuration) {
         mScrollDuration = scrollDuration;
+        resetScroller();
+    }
+
+    public int getPageDuration() {
+        return mPageDuration;
+    }
+
+    public void setPageDuration(final int pageDuration) {
+        mPageDuration = pageDuration;
         resetScroller();
     }
 
