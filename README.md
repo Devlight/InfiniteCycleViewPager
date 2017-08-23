@@ -180,7 +180,7 @@ Plugin is available on [Nuget](https://www.nuget.org/packages/Xam.Plugins.Androi
 Credits
 =======
 
-|[Yegor Kosinov](https://dribbble.com/Kosinov)|[Prakhar Neel Sharma](https://dribbble.com/prakhar)|
+|[Yehor Kosinov](https://dribbble.com/Kosinov)|[Prakhar Neel Sharma](https://dribbble.com/prakhar)|
 |:-------------------------------------------:|:-------------------------------------------------:|
 [![](https://drive.google.com/uc?export=download&id=0BxPO_UeS7wScVEZRbk5LaFVzUzQ)](https://dribbble.com/shots/2832006-Cinema-App)|[![](https://d13yacurqjgara.cloudfront.net/users/452635/screenshots/2383427/festival.png)](https://dribbble.com/shots/2383427-Personal-Festival-App-Finally-Done)
 
