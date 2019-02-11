@@ -734,8 +734,13 @@ class InfiniteCycleManager implements OnNotifyDataSetChangedListener {
 
             // Bring to front if needed
             if (needBringToFront) {
-                page.bringToFront();
-                mCastViewPageable.invalidate();
+                page.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        page.bringToFront();
+                        mCastViewPageable.invalidate();
+                    }
+                });
             }
 
             if (mOnInfiniteCyclePageTransformListener != null)
