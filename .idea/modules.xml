@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InfiniteCycleViewPager.iml" filepath="$PROJECT_DIR$/InfiniteCycleViewPager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/icvp.iml" filepath="$PROJECT_DIR$/icvp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" filepath="$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InfiniteCycleViewPager.iml" filepath="$PROJECT_DIR$/.idea/modules/InfiniteCycleViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InfiniteCycleViewPager.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/infinitecycleviewpager/InfiniteCycleViewPager.infinitecycleviewpager.unitTest.iml" />
     </modules>
   </component>
 </project>
